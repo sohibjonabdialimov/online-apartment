@@ -1,7 +1,5 @@
 import React, { useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
-import basket from "../../assets/basket.png";
-import saved from "../../assets/heart.png";
 
 const Header = () => {
   const hidden = useRef();
@@ -13,7 +11,7 @@ const Header = () => {
   }
   return (
     <>
-      <header className="sticky top-0 z-50 bg-white shadow-md">
+      <header className="bg-bg_color shadow-md">
         <nav
           className="flex items-center justify-between p-6 lg:px-20"
           aria-label="Global"
@@ -32,13 +30,7 @@ const Header = () => {
           </div>
           <div className="flex lg:hidden gap-4">
             <div className="flex items-center gap-4">
-              <NavLink
-                to={"/order"}
-                className="block w-[30px] h-[30px] header_img"
-              >
-                <img className="object-cover" src={basket} alt="" />
-                <p>0</p>
-              </NavLink>
+              
               {/* <NavLink
                 to={"/saved"}
                 className="block w-[30px] h-[30px] header_img"
@@ -100,10 +92,7 @@ const Header = () => {
             >
               Aloqa
             </NavLink>
-            <NavLink to={"/order"} className="w-[30px] h-[30px] header_img">
-              <img className="object-cover" src={basket} alt="" />
-              <p>0</p>
-            </NavLink>
+            
             {/* <NavLink to={"/saved"} className="w-[30px] h-[30px] header_img">
               <img className="object-cover" src={saved} alt="" />
               <p>0</p>

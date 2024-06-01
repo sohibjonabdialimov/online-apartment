@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        custom_blue: "#4F46E5FF"
+        custom_blue: "#4F46E5FF",
+        bg_color: "#e0f0f9"
       }
     },
   },

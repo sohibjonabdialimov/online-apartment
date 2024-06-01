@@ -17,7 +17,6 @@ import Messages from "./pages/Messages";
 import Installment from "./pages/installment/Installment";
 import Feedback from "./pages/Feedback";
 import Contact from "./pages/contact/Contact";
-import Order from "./pages/Order";
 import Saved from "./pages/Saved";
 import "./App.css";
 import "./style/dark.scss";
@@ -45,7 +44,6 @@ function App() {
               <Route index element={<Dashboard />} />
               {/* <Route path="furnitures" element={<Furniture />} /> */}
               <Route path="design" element={<Design />} />
-              <Route path="order" element={<Order />} />
               <Route path="saved" element={<Saved />} />
               <Route path="furnitures/:id" element={<OneFurniture />} />
               <Route path="contact" element={<Contact />} />
